@@ -46,11 +46,15 @@ public class FileUploadMVCActionCommand extends BaseMVCActionCommand {
 		
 		if(root_Folder_Name.isEmpty())
 		{
-			root_Folder_Name="Temporary";
+			log.info("You have not entered Folder Name");
+			root_Folder_Name="ID-Proof";
+			log.info("We are creating folder "+root_Folder_Name);
 		}
 		if(root_Folder_Description.isEmpty())
 		{
 			root_Folder_Description="Temporary Files";
+			log.info("You have not entered Folder Description");
+			log.info("we are setting folder description "+root_Folder_Description);
 		}
 		try {
 
@@ -59,7 +63,7 @@ public class FileUploadMVCActionCommand extends BaseMVCActionCommand {
 			documentMediaApi.createFolder(PARENT_FOLDER_ID,root_Folder_Name,root_Folder_Description,actionRequest, themeDisplay);
 			
 			
-			documentMediaApi.fileUpload(PARENT_FOLDER_ID, root_Folder_Name, root_Folder_Description, themeDisplay, actionRequest);
+			documentMediaApi.multipleFileUpload(PARENT_FOLDER_ID, root_Folder_Name, root_Folder_Description, themeDisplay, actionRequest);
 			log.info("File uploaded successfully");
 			
 			SessionMessages.add(actionRequest, "fileUploaded");

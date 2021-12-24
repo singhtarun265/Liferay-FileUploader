@@ -9,7 +9,7 @@
 
 <liferay-ui:success key="fileUploaded" message="File uploaded successfully" />
 <liferay-ui:error key="error-key" message="error" />
-<aui:form action="<%=uploadFileURL%>" name="<portlet:namespace />fm" enctype="multipart/form-data">
+<aui:form action="<%=uploadFileURL%>" name="<portlet:namespace />fm" method="post" enctype="multipart/form-data">
 	<aui:fieldset-group markupView="lexicon">
 		<aui:fieldset label="Basic Info">
 			<aui:row>
@@ -26,7 +26,7 @@
 			</aui:row>
 			<aui:row>
 				<aui:col width="33">
-					<aui:input label="Choose File" name="uploadedFile" type="file">
+					<aui:input type="file"  name="uploadedFile" multiple="true" label="Choose File">
 					</aui:input>
 				</aui:col>
 			</aui:row>

@@ -11,7 +11,9 @@ import javax.portlet.ActionRequest;
 public interface DocumentMediaApi {
 	
 	
-	public void fileUpload(long parent_Folder_Id,String root_Folder_Name,String root_Folder_Description,ThemeDisplay themeDisplay,ActionRequest actionRequest);
+	public void singleFileUpload(long parent_Folder_Id,String root_Folder_Name,String root_Folder_Description,ThemeDisplay themeDisplay,ActionRequest actionRequest);
+	
+	public void multipleFileUpload(long parent_Folder_Id,String root_Folder_Name,String root_Folder_Description,ThemeDisplay themeDisplay,ActionRequest actionRequest) throws Exception;
 	
 	public Folder getFolder(long parent_Folder_Id,String root_Folder_Name,ThemeDisplay themeDisplay);
 	
