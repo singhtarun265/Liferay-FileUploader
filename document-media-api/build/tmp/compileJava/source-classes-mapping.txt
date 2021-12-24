@@ -1,0 +1,2 @@
+com/liferay/document/media/api/api/DocumentMediaApi.java
+ com.liferay.document.media.api.api.DocumentMediaApi

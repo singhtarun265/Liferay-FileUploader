@@ -1,0 +1,3 @@
+Bundle-Name: document-media-service
+Bundle-SymbolicName: com.liferay.document.media.service
+Bundle-Version: 1.0.0

@@ -1,0 +1,2 @@
+com/liferay/document/media/service/DocumentMediaService.java
+ com.liferay.document.media.service.DocumentMediaService
