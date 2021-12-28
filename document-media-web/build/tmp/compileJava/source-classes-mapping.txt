@@ -2,5 +2,5 @@ com/liferay/document/media/constants/DocumentMediaPortletKeys.java
  com.liferay.document.media.constants.DocumentMediaPortletKeys
 com/liferay/document/media/portlet/DocumentMediaPortlet.java
  com.liferay.document.media.portlet.DocumentMediaPortlet
-com/liferay/document/media/mvcaction/FileUploadMVCActionCommand.java
- com.liferay.document.media.mvcaction.FileUploadMVCActionCommand
+com/liferay/document/media/mvcaction/FileUploadMVCResourceCommand.java
+ com.liferay.document.media.mvcaction.FileUploadMVCResourceCommand
